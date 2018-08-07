@@ -1,4 +1,5 @@
-package section2;
+
+			package section2;
 
 import java.awt.Color;
 
@@ -9,9 +10,20 @@ import org.jointheleague.graphical.robot.Robot;
 public class PentagonCrazy {
 
 	private void makePrettyThings() {
+		Robot genos = new Robot("vic");
 		// 1. Create a new Robot
+		genos.setSpeed(100); 
+		genos.penDown();
+		genos.setPenWidth(5);
+		genos.sparkle();
+		int sides = 5;
+int angle =360/3;
+		for (int i = 0; i < 1000; i++) {
+			genos.move(i);
+			genos.turn(360/3);  
+		genos.setRandomPenColor();
 
-		// 3. Put the robot's pen down
+			// 3. Put the robot's pen down
 
 		// 8. Make the robot go at maximum speed (100)
 
@@ -30,7 +42,8 @@ public class PentagonCrazy {
 			// 6. Turn the robot the amount in your angle variable
 	
 			// 11. Turn the robot one more degree
-
+		genos.turn(1);
+		}
 	}
 
 	// Variations:
