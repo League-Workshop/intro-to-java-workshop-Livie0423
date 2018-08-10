@@ -10,14 +10,14 @@ import org.jointheleague.graphical.robot.Robot;
 public class PentagonCrazy {
 
 	private void makePrettyThings() {
-		Robot genos = new Robot("vic");
+		Robot genos = new Robot("batman");
 		// 1. Create a new Robot
 		genos.setSpeed(100); 
 		genos.penDown();
 		genos.setPenWidth(5);
 		genos.sparkle();
-		int sides = 5;
-int angle =360/3;
+		int sides = 100;
+int angle =360/100;
 		for (int i = 0; i < 1000; i++) {
 			genos.move(i);
 			genos.turn(360/3);  
